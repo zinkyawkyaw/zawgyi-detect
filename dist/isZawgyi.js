@@ -1,4 +1,5 @@
 // author Aung Phyo Khaing + Zin Kyaw Kyaw
+//version 1.0.2
 module.exports =  (str) => 
 {
     var zgRegex = 'ေျ' // e+medial ra
@@ -16,7 +17,7 @@ module.exports =  (str) =>
     zgRegex += '|ျြ'
     // consonant + asat + ya ra wa ha independent vowel e dot below
     // visarga asat medial ra digit symbol
-    zgRegex += '|[က-အ]်[ယရဝဟဢ-ဪေ့-်ြဝ-၏]'
+    zgRegex += '|[က-အ]္[ယရဝဟဢ-ဪေ့-္ျ၀-၏]'
     // II+I II ae
     zgRegex += '|ီ[ိှဲ]'
     // ae + I II
@@ -30,7 +31,7 @@ module.exports =  (str) =>
     // shan digit + vowel
     zgRegex += '|[႐-႙][ါ-ူဲ့ြ-ှ]'
     // consonant + medial ya + dependent vowel tone asat
-    zgRegex += '|[က-ဪ]ျ[ာ-ီဲ-ံ]'
+    zgRegex += '|[က-ဪ]်[ာ-ီဲ-ံ]'
     // independent vowel dependent vowel tone digit + e [ FIXED !!! - not include medial ]
     zgRegex += '|[ဣ-ူဲ-္၀-၏]ေ'
     // other shapes of medial ra + consonant not in Shan consonant
@@ -45,9 +46,9 @@ module.exports =  (str) =>
     zgRegex += '|[ိ-ူဲံ့]္'
     // aa + asat awww
     zgRegex += '|ာ္'
-    
+      
     // ya + medial wa
-    zgRegex += '|ရွ'
+    zgRegex += '|ရြ'
     // non digit + zero + ိ (i vowel) [FIXED!!! rules tested zero + i vowel in numeric usage]
     zgRegex += '|[^၀-၉]၀ိ'
     // e + zero + vowel
@@ -60,8 +61,8 @@ module.exports =  (str) =>
     zgRegex += '|[ုူဲ]႔'
     // virama + (zawgyi) medial ra
     zgRegex += '|္[ၾ-ႄ]';
-
-
+    
+    
     var regex  = RegExp(zgRegex);
     return regex.test(str)
 }
