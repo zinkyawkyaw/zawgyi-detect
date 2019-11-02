@@ -1,0 +1,28 @@
+{
+  "name": "is-zawgyi",
+  "version": "1.0.0",
+  "description": "Zawgyi Detector",
+  "main": "dist/isZawgyi.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinkyawkyaw/zawgyi-detect.git"
+  },
+  "keywords": [
+    "Zawgyi",
+    "Detector",
+    "detect",
+    "Zawgyi",
+    "Unicode",
+    "to",
+    "Zawgyi",
+    "Myanmar",
+    "Font"
+  ],
+  "author": "Zin Kyaw Kyaw (AJ)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zinkyawkyaw/zawgyi-detect/issues"
+  },
+  "homepage": "https://github.com/zinkyawkyaw/zawgyi-detect#readme"
+}
