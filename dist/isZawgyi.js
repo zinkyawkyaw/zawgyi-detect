@@ -1,5 +1,5 @@
 // author Aung Phyo Khaing + Zin Kyaw Kyaw
-//version 1.0.2
+//version 1.0.0
 module.exports =  (str) => 
 {
     var zgRegex = 'ေျ' // e+medial ra

@@ -1,6 +1,6 @@
 {
   "name": "is-zawgyi",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Zawgyi Detector",
   "main": "dist/isZawgyi.js",
   "scripts": {},
@@ -12,10 +12,7 @@
     "Zawgyi",
     "Detector",
     "detect",
-    "Zawgyi",
     "Unicode",
-    "to",
-    "Zawgyi",
     "Myanmar",
     "Font"
   ],
